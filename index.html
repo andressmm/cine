@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esquema de Asientos Cine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Selecciona tus asientos</h2>
+    <ul class="legend">
+      <li><span class="seat"></span> Disponible</li>
+      <li><span class="seat selected"></span> Seleccionado</li>
+      <li><span class="seat occupied"></span> Ocupado</li>
+    </ul>
+
+    <div class="screen">Pantalla</div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+    </div>
+
+    <p class="info">
+      Asientos seleccionados: <span id="count">0</span><br>
+      Total: $<span id="total">0</span>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

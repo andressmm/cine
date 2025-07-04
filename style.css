@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 300px;
+  text-align: center;
+}
+
+.screen {
+  background: #444;
+  height: 40px;
+  margin: 20px 0;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.seat.selected {
+  background: #6feaf6;
+}
+
+.seat.occupied {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.legend {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.legend li {
+  font-size: 14px;
+}
+.legend .seat {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
